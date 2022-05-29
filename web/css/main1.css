@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+#snav1{
+    padding:1em;
+    background-color:#4267b2;
+    margin-right:2em;
+    margin-top:3.6em;
+    height:745px;
+}
+
+.items{
+    margin-left:16em;
+    margin-top:-46em;
+    width:100%;
+}
+#w3{
+    opacity:0.8;  
+}
+.panel.panel-default{
+    background-color:#4267b2;   
+    border-color:#4267b2; 
+    
+    
+}
+.nav.nav-pills.nav-stacked.kv-sidenav#w3{
+    opacity:1;
+}
+.nav.nav-pills.nav-stacked.kv-sidenavi{
+    background-color:#4267b2 ;
+    
+}
+.nav.nav-pills.nav-stacked.kv-sidenav li a{
+    color:white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: fixed;
+    overflow:scroll;
+    top: 3.5em;
+    height:100%;
+    background-color: #4267b2;
+    padding: 50px;
+    
+  }
+  .panel-title{
+      font-weight:bold;
+  }
+.navbar-brand p{
+    color:white;
+}
+
+
+.nav.nav-pills.nav-stacked.kv-sidenav li:not(:active) a{
+    background-color:#4267b2;
+    color:white;
+    border-radius:8px;
+}
+.nav.nav-pills.nav-stacked.kv-sidenav li.active a{
+  
+    background-color:	#D04646;
+    color:white;
+    border-radius:8px;
+}
+.nav.nav-pills.nav-stacked.kv-sidenav li.active ul li a{
+    
+    background-color:#17a2b8;
+    color:white;
+    border-radius:8px;
+}
+.nav.nav-pills.nav-stacked.kv-sidenav li.active ul li a:hover{
+  
+    background-color:#17a2b8;
+    color:white;
+    border-radius:8px;
+    background-color:#6c757d ;
+}
+.nav.nav-pills.nav-stacked.kv-sidenav li.active ul li.active a{
+    
+    background-color:	#D04646;
+    color:white;
+    border-radius:8px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li#set > a:hover {
+    border-radius:8px;
+}
+
+
+.nav.nav-pills.nav-stacked.kv-sidenav li#set a{
+    margin-top:1em;
+}
+
+.nav.nav-pills.nav-stacked.kv-sidenav li#set1 a{
+    margin-left:1em;
+    margin-right:1em;
+    margin-top:1em;
+}
+
+.nav.nav-pills.nav-stacked.kv-sidenav li a:hover{
+    background-color:#6c757d ;
+    border-radius:8px;
+}
+
+.nav.nav-pills.nav-stacked.kv-sidenav li ul{
+    background-color: #4267b2;
+}
+.nav.nav-pills.nav-stacked.kv-sidenav{
+    background-color:#4267b2;
+    margin-bottom:5em;
+}
+.table.m-0{
+    margin-top:1em;
+    background-color:#4267b2 ;
+}
+form div.required label.form-label:after {
+  content:" * ";
+  color:red;
+}

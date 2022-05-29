@@ -1,0 +1,25 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
+/* @var $this yii\web\View */
+/* @var $model app\models\Caste */
+/* @var $form yii\widgets\ActiveForm */
+?>
+
+<div class="caste-form">
+
+    <?php $form = ActiveForm::begin(); ?>
+
+    <?= $form->field($model, 'name')->textInput() ?>
+
+
+
+    <div class="form-group">
+        <?= Html::submitButton('पेश गर्नुहोस', ['class' => 'btn btn-success']) ?>
+    </div>
+
+    <?php ActiveForm::end(); ?>
+
+</div>
