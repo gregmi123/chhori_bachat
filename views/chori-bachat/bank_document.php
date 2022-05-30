@@ -119,9 +119,24 @@ $nepali_date = array('०','१', '२', '३', '४', '५', '६', '७', '८
                         <td><?= 
                         $date3 = str_replace($eng_date, $nepali_date, $bank_chori['birth_certificate_date']);
                         //$bank_chori['birth_certificate_date'] ?></td>
-                        <td><?= $bank_chori['father_name'] ?></td>
-                        <td><?= $bank_chori['tole_name'] ?>-<?= $ward['ward_name'] ?></td>
+                        <?php if($bank_chori['take_care_person']){ ?>
+                        <td><?= $bank_chori['take_care_person'] ?></td>
+                        <?php } else if($bank_chori['father_name']){ ?>
+                            <td><?= $bank_chori['father_name'] ?></td>
+                        <?php } else{ ?>
+                            <td><?= $bank_chori['mother_name'] ?></td>
+                        <?php } ?>
+                        <?php 
+                        $municipal_nepali=\app\models\Municipals::findOne(['id'=>$bank_chori['fk_per_municipal']]);
+                        $district_nepali=\app\models\District::findOne(['id'=>$bank_chori['fk_per_district']]);
+                        $ward=\app\models\Ward::findOne(['id'=>$bank_chori['fk_ward']]);
 
+                        if($bank_chori['tole_name']){
+                        ?>
+                        <td><?= $municipal_nepali['municipal_nepali'] ?>-<?= $district_nepali['district_nepali'] ?>-<?= $bank_chori['tole_name'] ?>-<?= $ward['ward_name'] ?> </td>    
+                    <?php } else { ?>
+                        <td><?= $municipal_nepali['municipal_nepali'] ?>-<?= $district_nepali['district_nepali'] ?>-<?= $ward['ward_name'] ?> </td>
+                        <?php } ?>
                     </tr>
                     <?php } ?>
                
